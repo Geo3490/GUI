@@ -12,6 +12,7 @@ public class Main {
 
         frame.setSize(350, 200);
         frame.add(panel);
+        frame.setDefaultCloseOperation();
 
         panel.setBounds(40, 100, 50, 100);
 

@@ -5,19 +5,25 @@ import javax.swing.*;
 public class Main {
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame();
-        JPanel panel = new JPanel();
-        JLabel label = new JLabel();
-        JButton button = new JButton();
-
-        frame.setSize(350, 200);
-        frame.add(panel);
-        frame.setDefaultCloseOperation();
-
-        panel.setBounds(40, 100, 50, 100);
+            JFrame frame = new JFrame();
+            frame.setSize(350,200);
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 
+            JPanel panel = new JPanel();
+            panel.setLayout(null);
 
-        frame.setVisible(true);
+
+            JLabel userLabel = new JLabel("User");
+
+
+
+
+
+
+
+            frame.setVisible(true);
+
+
     }
 }

@@ -6,19 +6,22 @@ public class Main {
 
     public static void main(String[] args) {
             JFrame frame = new JFrame();
+            JPanel panel = new JPanel();
+            JLabel userLabel = new JLabel("User");
+            JLabel passwordLabel = new JLabel("Password");
+            JTextField userText = new JTextField();
+            JTextField passwordText = new JTextField();
+
             frame.setSize(350,200);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.add(panel);
 
 
-            JPanel panel = new JPanel();
             panel.setLayout(null);
+            panel.add(userLabel);
 
 
-            JLabel userLabel = new JLabel("User");
-
-
-
-
+            userLabel.setBounds(10,25,80,20);
 
 
 

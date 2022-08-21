@@ -19,9 +19,11 @@ public class Main {
 
             panel.setLayout(null);
             panel.add(userLabel);
+            panel.add(passwordLabel);
 
 
             userLabel.setBounds(10,25,80,20);
+            passwordLabel.setBounds(10,50,80,20);
 
 
 

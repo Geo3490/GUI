@@ -36,9 +36,6 @@ public class Main {
             button.setBounds(100,100,45,20);
 
 
-
-
-
             frame.setVisible(true);
 
 

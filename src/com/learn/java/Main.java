@@ -1,23 +1,25 @@
 package com.learn.java;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Main {
+public class Main implements ActionListener {
+            private static JFrame frame = new JFrame();
+            private static JPanel panel = new JPanel();
+            private static JLabel userLabel = new JLabel("User");
+            private static JLabel passwordLabel = new JLabel("Password");
+            private static JLabel buttonLabel = new JLabel("Log In");
+            private static JLabel success = new JLabel("");
+            private static JTextField userText = new JTextField(20);
+            private static JTextField passwordText = new JTextField();
+            private static JButton button = new JButton();
 
     public static void main(String[] args) {
-            JFrame frame = new JFrame();
-            JPanel panel = new JPanel();
-            JLabel userLabel = new JLabel("User");
-            JLabel passwordLabel = new JLabel("Password");
-            JLabel buttonLabel = new JLabel("Log In");
-            JTextField userText = new JTextField();
-            JTextField passwordText = new JTextField();
-            JButton button = new JButton();
 
             frame.setSize(350,200);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.add(panel);
-
 
             panel.setLayout(null);
             panel.add(userLabel);
@@ -32,12 +34,20 @@ public class Main {
 
             panel.add(buttonLabel);
             panel.add(button);
+            button.addActionListener(new Main());
             buttonLabel.setBounds(105,100, 40,20);
             button.setBounds(100,100,45,20);
 
+            success.setBounds(10,110,300,25);
+            panel.add(success);
 
             frame.setVisible(true);
-
-
     }
+        @Override
+        public void actionPerformed(ActionEvent e) {
+               String user = userText.getText();
+               String password = passwordText.getText();
+                System.out.println(user +" " + password);
+
+        }
 }

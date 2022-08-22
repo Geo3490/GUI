@@ -14,6 +14,8 @@ public class Main implements ActionListener {
             private static JTextField userText = new JTextField(20);
             private static JTextField passwordText = new JTextField();
             private static JButton button = new JButton();
+            private static String user ="George";
+            private static String password ="ruby";
 
     public static void main(String[] args) {
 
@@ -47,7 +49,13 @@ public class Main implements ActionListener {
         public void actionPerformed(ActionEvent e) {
                String user = userText.getText();
                String password = passwordText.getText();
-                System.out.println(user +" " + password);
 
-        }
+               if(user =="George" && password == "ruby123"){
+                   System.out.println("correct");
+        }else {
+
+                   System.out.println("Wrong");
+               }
+    }
+
 }
